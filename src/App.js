@@ -1,13 +1,13 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import {Homepages,Blogcontents} from ".//pages/index"
 
 function App() {
-  return(
+  return (
     <>
-    <Navbar />
+      {/* <Homepages /> */}
+      <Blogcontents />
     </>
-  )
+  );
 }
 
 export default App;
-

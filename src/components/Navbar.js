@@ -10,7 +10,7 @@ function Navbar() {
   }
 
   return (
-    <div className="w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg">
+    <div className="w-full h-[80px] z-10 bg-white fixed drop-shadow-lg top-0">
       <div className="flex justify-around items-center w-full h-full md:max-w-[1240px] m-auto">
         <div className="flex items-center">
           <img
