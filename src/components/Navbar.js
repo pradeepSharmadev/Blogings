@@ -25,19 +25,19 @@ function Navbar() {
         <div className="flex items-center ">
           <ul className="hidden md:flex">
             <Link to="/">
-              <li>Home</li>
+              <li className="hover:text-blue-900">Home</li>
             </Link>
             <Link to="/">
-              <li>About</li>
+              <li className="hover:text-blue-900">About</li>
             </Link>
             <Link to="/">
-              <li>Support</li>
+              <li className="hover:text-blue-900">Support</li>
             </Link>
             <Link to="/">
-              <li>Portfolio</li>
+              <li className="hover:text-blue-900">Portfolio</li>
             </Link>
             <Link to="/">
-              <li>Pricing</li>
+              <li className="hover:text-blue-900">Pricing</li>
             </Link>
           </ul>
         </div>
@@ -61,19 +61,19 @@ function Navbar() {
         }
       >
         <Link to="/">
-          <li>Home</li>
+          <li className="hover:text-blue-900">Home</li>
         </Link>
         <Link to="/">
-          <li>About</li>
+          <li className="hover:text-blue-900">About</li>
         </Link>
         <Link to="/">
-          <li>Support</li>
+          <li className="hover:text-blue-900">Support</li>
         </Link>
         <Link to="/">
-          <li>Portfolio</li>
+          <li className="hover:text-blue-900">Portfolio</li>
         </Link>
         <Link to="/">
-          <li>Pricing</li>
+          <li className="hover:text-blue-900">Pricing</li>
         </Link>
         <div className="flex flex-col my-4 ">
           <button className="bg-transparent text-black mr-2 mb-4 py-3 px-8 ">

@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaYoutube, FaGithub} from "react-icons/fa";
+import Massagecard from "../components/Massagecard"
+
 const Footer = () => {
+  const [email,setEmail] = useState(null)
+  const [massage,setMassage] = useState(null)
+
+  const handleSubmit = (event) => {
+    event.preventDefault() //prevent to auto load the page on submit form event
+
+    setEmail(event.target[0].value)
+    setMassage(event.target[1].value)
+  }
+  const handleClick = () =>{
+    alert("Email: "+email+" Massage: "+massage)
+    // return(
+    //   <Massagecard />
+    // )
+  }
   return (
     <div className="w-full bg-[#02044A] text-gray-300 py-8 px-2">
       <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
@@ -45,13 +62,23 @@ const Footer = () => {
           <p className="py-4">
             To get latest News, Articles directly to your inbox.{" "}
           </p>
-          <form action="" className="flex flex-row sm:flex-col">
+          <form
+            action=""
+            onSubmit={handleSubmit}
+            className="flex flex-row sm:flex-col"
+          >
             <input
-              type="text"
-              className="w-full p-2 mr-4 rounded-md mb-2"
+              type="email"
+              className="w-full p-2 mr-4 rounded-md mb-2 text-black"
               placeholder="Enter Your Email..."
             />
-            <button className="border-none p-2 mb-2 bg-green-600">
+            <textarea
+              type="text"
+              className="w-full p-2 mr-4 rounded-md mb-2 text-black"
+              placeholder="Enter Your Massage..."
+              rows={3}
+            />
+            <button onClick={handleClick} className="border-none p-2 mb-2 bg-green-600">
               Subscribe
             </button>
           </form>

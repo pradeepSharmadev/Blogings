@@ -89,7 +89,11 @@ const Blogs = () => {
       <div className="max-w-[1240px] mx-auto">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 ss:grid-cols-1 gap-8 px-4 text-black">
           {blogs.map((eachBlog) => (
-            <Link to={`/blog/${blogs[0].id}`}> {/*want to acces the each element id to set path with that id */}  
+            <Link
+              to={`/blog/${eachBlog.id}`}
+              className=" grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 ss:grid-cols-1 gap-8 px-4"
+            >
+              {/*want to acces the each element id to set path with that id */}
               <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
                 <img
                   className="h-56 w-full object-cover"
@@ -108,7 +112,6 @@ const Blogs = () => {
               </div>
             </Link>
           ))}
-
         </div>
       </div>
     </div>
