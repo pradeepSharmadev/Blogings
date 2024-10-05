@@ -27,25 +27,27 @@ function Navbar() {
             <Link to="/">
               <li className="hover:text-blue-900">Home</li>
             </Link>
-            <Link to="/">
+            <Link to="/workingon">
               <li className="hover:text-blue-900">About</li>
             </Link>
-            <Link to="/">
+            <Link to="/workingon">
               <li className="hover:text-blue-900">Support</li>
             </Link>
-            <Link to="/">
+            <Link to="/workingon">
               <li className="hover:text-blue-900">Portfolio</li>
             </Link>
-            <Link to="/">
+            <Link to="/workingon">
               <li className="hover:text-blue-900">Pricing</li>
             </Link>
           </ul>
         </div>
         <div className="hidden md:flex sm:mr-10 md:mr-10">
-          <button className="border-none bg-transparent text-black mr-4">
-            Login
-          </button>
-          <button className="px-8 py-3">Sign Up</button>
+          <Link to="/workingon">
+            <button className="border-none bg-transparent text-black mr-4">
+              Login
+            </button>
+            <button className="px-8 py-3 hover:bg-blue-800">Sign Up</button>
+          </Link>
         </div>
         <div className="md:hidden" onClick={handleClick}>
           <img
@@ -63,23 +65,25 @@ function Navbar() {
         <Link to="/">
           <li className="hover:text-blue-900">Home</li>
         </Link>
-        <Link to="/">
+        <Link to="/workingon">
           <li className="hover:text-blue-900">About</li>
         </Link>
-        <Link to="/">
+        <Link to="/workingon">
           <li className="hover:text-blue-900">Support</li>
         </Link>
-        <Link to="/">
+        <Link to="/workingon">
           <li className="hover:text-blue-900">Portfolio</li>
         </Link>
-        <Link to="/">
+        <Link to="/workingon">
           <li className="hover:text-blue-900">Pricing</li>
         </Link>
-        <div className="flex flex-col my-4 ">
-          <button className="bg-transparent text-black mr-2 mb-4 py-3 px-8 ">
-            Login
-          </button>
-          <button className="px-8 py-3">Sign Up</button>
+        <div className="gird grid-rows-2 my-4 ">
+          <Link to="/workingon">
+            <button className="bg-transparent w-full text-black mr-2 mb-4 py-3 px-8 ">
+              Login
+            </button>
+            <button className="px-8 py-3 w-full hover:bg-blue-800">Sign Up</button>
+          </Link>
         </div>
       </ul>
     </div>

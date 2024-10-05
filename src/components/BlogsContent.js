@@ -132,11 +132,15 @@ function BlogsContent() {
   let blog = blogs.filter((val) => val.id === id); //filtering the content on the page based on the url id
   blog = blogs[id - 1];
   return (
-    <div className="w-full pb-10 bg-[#f9f9f9] md:pt-[40px]">
+    <div className="w-full pb-10 bg-[#f9f9f9] mt-[60px]">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 ss:grid-cols-1 gap-x-8 gap-y-8 px-4 sm:pt-20 md:gap-8 sm:gap-y-8 md:mt-0 ss:pt-20 text-black">
           <div className="col-span-2 gap-x-8 gap-y-8">
-            <img src={blog.coverImg} alt="" className="h-72 rounded-sm w-full object-cover" />
+            <img
+              src={blog.coverImg}
+              alt=""
+              className="h-72 rounded-sm w-full object-cover"
+            />
             <Link to="/" className="flex gap-1 pt-2">
               <IoIosArrowRoundBack className="h-8 w-7 text-blue-900" />
               <div className="bg-transparent text-blue-900 underline text-[18px]">

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import photos from "../assets/images.jpeg"
-import {Link} from "react-router-dom"
+import {Link, useParams} from "react-router-dom"
 import {blockchain,aiml,security,greentech,webtechs,cloudcomputation} from "./index.js"
 
 const Blogs = () => {
-
+  
     const blogs = [
       {
         id: 1,
