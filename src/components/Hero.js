@@ -25,9 +25,9 @@ const Hero = () => {
         >
           <img className="w-full h-[400px] object-cover" src={backPhoto} alt="" />
         </div>
-        <div className="ml-auto mr-auto max-w-[800px] h-[400px] backdrop-blur-[25px] rounded-[32px] relative top-[-300px] shadow-lg bg-transparent">
+        <div className="ml-auto mr-auto max-w-[800px] h-[400px] backdrop-blur-[16px] rounded-[32px] relative top-[-300px] shadow-lg bg-[rgba(255,255,255,0.5)]">
           <div className="lg:w-[800px] lg:h-[400px] md:w-[800px] md:[400px] lg:pt-2 md:pt-24 sm:pt-24 ss:pt-24 xs:pt-24 pt-8 flex flex-col justify-center align-middle text-center">
-            <div className="text-center text-4xl font-bold mb-2">
+            <div className="text-center text-4xl font-bold mb-2 ">
               The Future of Technology AI and ML
             </div>
             <div className="max-w-lg ml-auto mr-auto text-center text-md font-[400]">
