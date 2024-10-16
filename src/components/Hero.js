@@ -35,7 +35,7 @@ const Hero = () => {
               transforming industries by automating tasks, improving
               decision-making, and enabling innovation.
             </div>
-            <div className="flex gap-4 ml-auto mr-auto mt-10 grid ss:grid-cols-4  xs:mt-6 md:mt-12 lg:mt-12
+            <div className=" gap-4 ml-auto mr-auto mt-10 grid ss:grid-cols-4  xs:mt-6 md:mt-12 lg:mt-12
             ss:mt-12 xs:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
               <button className="h-10 w-32 text-lg border-none hover:bg-blue-800 transition-all ">
                 All
