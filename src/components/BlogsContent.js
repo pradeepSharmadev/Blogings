@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import photos from "../assets/images.jpeg";
 import profilePhoto from "../assets/githubprofile.png";
 import { Link, useParams } from "react-router-dom";
@@ -11,6 +11,7 @@ import {
   webtechs,
   cloudcomputation,
 } from "./index.js";
+import { useState } from "react";
 
 function BlogsContent() {
   let { id } = useParams(); // read the url id value
