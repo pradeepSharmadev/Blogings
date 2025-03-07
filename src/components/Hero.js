@@ -25,11 +25,6 @@ const Hero = () => {
   const backPhoto = photoArr[tractHistroy];
 
   const categories = ["All", "Technology", "Healths", "Business"];
-  const [filter, setFilter] = useState("all");
-
-  const handleFilter = (val)=>{
-
-  }
 
   return (
     <>
@@ -60,7 +55,7 @@ const Hero = () => {
             ss:mt-12 xs:grid-cols-2 md:grid-cols-4 lg:grid-cols-4"
             >
               {categories.map((val, ind) => (
-                <button key={ind} onClick={()=> handleFilter(val)} className="h-10 w-32 text-lg border-none hover:bg-blue-800 transition-all ">
+                <button key={ind} className="h-10 w-32 text-lg border-none hover:bg-blue-800 transition-all ">
                   {val}
                 </button>
               ))}
